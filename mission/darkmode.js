@@ -6,15 +6,19 @@ document.addEventListener("DOMContentLoaded", () => {
     themeSelect.addEventListener("change", (e) => {
 
         if (e.target.value === "dark") {
+
+            // dark background
             document.body.classList.add("dark");
 
-            // DARK MODE → show DARK logo
+            // show DARK logo
             logo.src = "byui-logo-dark.png";
 
         } else {
+
+            // light background
             document.body.classList.remove("dark");
 
-            // LIGHT MODE → show WHITE logo
+            // show WHITE logo
             logo.src = "byui-logo-white.png";
         }
 
