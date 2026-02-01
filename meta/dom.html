@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML, CSS, and JS - DOM Basics Ponder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="content">
+    <h1>HTML, CSS, and JS</h1>
+    
+    <p id="description">The foundational technologies that power websites and web applications</p>
+    <hr>
+    <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+    
+    <div id="topics">
+      <h2 id="topic-title">HyperText Markup Language</h2>
+      <ul id="topic-list" class="list">
+        <li>Defines the structure and content of a web page.</li>
+        <li>Without HTML there's nothing for the browser to display.</li>
+      </ul>
+    </div>
+
+    <!-- Dropdown added here -->
+    <div style="text-align: center; margin-top: 2rem;">
+      <label for="webdevlist">Choose One to Learn More:</label>
+      <select name="code" id="webdevlist">
+        <option value="">Choose One:</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
