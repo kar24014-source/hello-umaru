@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML, CSS, and JS - DOM Basics Ponder</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Flick Picks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="content">
-    <h1>HTML, CSS, and JS</h1>
-    
-    <p id="description">The foundational technologies that power websites and web applications</p>
-    <hr>
-    <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
-    
-    <div id="topics">
-      <h2 id="topic-title">HyperText Markup Language</h2>
-      <ul id="topic-list" class="list">
-        <li>Defines the structure and content of a web page.</li>
-        <li>Without HTML there's nothing for the browser to display.</li>
-      </ul>
-    </div>
 
-    <!-- Dropdown added here -->
-    <div style="text-align: center; margin-top: 2rem;">
-      <label for="webdevlist">Choose One to Learn More:</label>
-      <select name="code" id="webdevlist">
-        <option value="">Choose One:</option>
-        <option value="html">HTML</option>
-        <option value="css">CSS</option>
-        <option value="js">JavaScript</option>
-      </select>
-    </div>
-  </div>
+<header>
+    <h1>Flick Picks</h1>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-  <script src="scripts.js"></script>
+<main id="main-content">
+    <section id="movie-list" aria-label="Movie Reviews">
+
+        <article class="movie">
+            <h2>Spider-Man: Into the Spider-Verse</h2>
+            <img src="https://wddbyui.github.io/wdd131/images/spiderman.png"
+                 alt="Miles Morales swinging through the city">
+
+            <p><strong>Release Date:</strong> Dec 14, 2018</p>
+            <p><strong>Recommended Age:</strong> 10+</p>
+            <p><strong>Genre:</strong> Action/Adventure</p>
+            <p>
+                <strong>Rating:</strong>
+                <span aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span>
+            </p>
+
+            <p id="desc">
+                Miles Morales becomes the Spider-Man of his reality and crosses
+                paths with others from the multiverse.
+            </p>
+        </article>
+
+        <article class="movie">
+            <h2>The Other Side of Heaven</h2>
+            <img src="https://wddbyui.github.io/wdd131/images/heaven.png"
+                 alt="A young couple and missionaries in a row boat on the ocean">
+
+            <p><strong>Release Date:</strong> December 14, 2001</p>
+            <p><strong>Recommended Age:</strong> 10+</p>
+            <p><strong>Genre:</strong> Drama/Religious</p>
+            <p>
+                <strong>Rating:</strong>
+                <span aria-label="5 out of 5 stars">⭐⭐⭐⭐⭐</span>
+            </p>
+
+            <p id="desc">
+                Based on the true story of Elder John H. Groberg, a missionary in Tonga
+                in the 1950s, this film tells a powerful story of faith,
+                hardship, and miracles.
+            </p>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <p>&copy; Flick Picks</p>
+</footer>
+
 </body>
 </html>
